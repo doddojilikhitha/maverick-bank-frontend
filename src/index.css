@@ -1,0 +1,223 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6fa;
+}
+
+/* Button hover effects */
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+
+/* Form focus styles */
+.form-control:focus {
+  border-color: #2d6a9f;
+  box-shadow: 0 0 0 0.2rem rgba(45, 106, 159, 0.25);
+}
+
+/* Card styles */
+.card {
+  border: none;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Sidebar link hover */
+a:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  transition: background-color 0.2s ease;
+}
+
+/* Table styles */
+.table th {
+  background-color: #1a3c5e;
+  color: white;
+  font-weight: 600;
+}
+
+/* Dashboard layout */
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .dashboard-content {
+    padding: 12px;
+  }
+
+  .table-responsive {
+    font-size: 12px;
+  }
+}
+
+/* Smooth card hover */
+.card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 4px 20px
+    rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Form smoothness */
+.form-control,
+.form-select {
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Button focus */
+.btn:focus {
+  outline: none;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(26, 60, 94, 0.3);
+}
+
+/* Navbar shadow */
+.navbar {
+  box-shadow:
+    0 2px 10px
+    rgba(0, 0, 0, 0.15);
+}
+
+/* Smooth links */
+a {
+  transition: all 0.2s ease;
+}
+
+/* ===== Premium Bank Login ===== */
+
+.bank-login-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      135deg,
+      #0f2744 0%,
+      #1a3c5e 40%,
+      #2d6a9f 100%
+    );
+}
+
+.bank-brand-panel {
+  color: white;
+  padding: 60px;
+}
+
+.bank-brand-panel h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.bank-brand-panel p {
+  opacity: 0.9;
+  font-size: 18px;
+}
+
+.bank-login-card {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 24px;
+  border: none;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.15);
+}
+
+.bank-login-card .form-control {
+  height: 52px;
+  border-radius: 12px;
+}
+
+.bank-login-btn {
+  background: linear-gradient(
+    90deg,
+    #1a3c5e,
+    #2d6a9f
+  );
+  border: none;
+  border-radius: 12px;
+  height: 52px;
+  font-weight: 700;
+}
+
+.bank-login-btn:hover {
+  opacity: 0.95;
+}
+
+.security-badge {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 16px;
+  padding: 18px;
+  margin-top: 24px;
+}
+
+@media (max-width: 992px) {
+  .bank-brand-panel {
+    display: none;
+  }
+
+  .bank-login-card {
+    margin: 20px;
+  }
+}
+.bank-login-btn {
+  transition: all 0.3s ease;
+}
+
+.bank-login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 12px 25px
+    rgba(0,0,0,0.18);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link-custom {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #7dd3fc;
+}
+
+.accordion-button::after {
+  filter: brightness(8);
+}

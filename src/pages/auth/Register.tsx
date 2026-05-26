@@ -344,10 +344,17 @@ const Register: React.FC = () => {
                     <div className="invalid-feedback">{errors.dob}</div>
                   )}
                   {/* Show calculated age when valid */}
-                  {form.dob && !errors.dob && getAge() !== null && (
-                    <small className="text-success fw-semibold">
-                      ✓ Age: {getAge()} years
-                    </small>
+                  {/* Show age / validation */}
+                  {form.dob && getAge() !== null && (
+                    getAge()! >= 18 ? (
+                      <small className="text-success fw-semibold">
+                        ✓ Age: {getAge()} years
+                      </small>
+                    ) : (
+                      <small className="text-danger fw-semibold">
+                        ✗ Must be at least 18 years old
+                      </small>
+                    )
                   )}
                 </div>
 

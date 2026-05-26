@@ -1,3 +1,5 @@
+//interfaces for type safety
+
 export interface OpenAccountRequest {
   accountType: string;
   branchName: string;

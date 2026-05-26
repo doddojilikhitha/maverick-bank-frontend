@@ -9,6 +9,7 @@ import { useLocation }    from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 const ApplyLoan: React.FC = () => {
   const location = useLocation();
   const preSelected = location.state?.product as LoanProduct | undefined;

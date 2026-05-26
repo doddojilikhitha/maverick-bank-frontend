@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { AuthResponse, User } from "../types/auth.types";
 
+//Authentication state management
 interface AuthContextType {
   user: User | null;
   token: string | null;
